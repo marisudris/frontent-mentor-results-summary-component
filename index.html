@@ -10,6 +10,7 @@
   <title>Frontend Mentor | Results summary component</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+<script src="./script.js" defer></script>
 <body>
   <header class="header visually-hidden">
     <h1>Results Summary Component</h1>
@@ -20,14 +21,16 @@
         <h2 class="result-title">Your Result</h2>
         <div class="score-circle" aria-label="Score">
           <p class="score-value">
-            <span class="score-number">76</span>
-            <span class="score-total">of 100</span>
+            <span class="score-number score-js"></span>
+            <span class="score-total score-total-js"></span>
           </p>
         </div>
-        <p class="result-grade">Great</p>
-        <p class="result-description">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
+        <div class="result-verdict verdict-js">
+          <p class="result-grade">Great</p>
+          <p class="result-description">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
       </section>
       <section class="summary-section" >
         <h2 class="summary-title">Summary</h2>
@@ -38,7 +41,7 @@
               <span class="metric-name">Reaction</span>
             </div>
             <p class="metric-score">
-              <span class="score-achieved">80</span>
+              <span class="score-achieved"></span>
               <span class="score-separator" aria-hidden="true"> / </span>
               <span class="score-max">100</span>
             </p>
@@ -49,7 +52,7 @@
               <span class="metric-name">Memory</span>
             </div>
             <p class="metric-score">
-              <span class="score-achieved">92</span>
+              <span class="score-achieved"></span>
               <span class="score-separator" aria-hidden="true"> / </span>
               <span class="score-max">100</span>
             </p>
@@ -60,7 +63,7 @@
               <span class="metric-name">Verbal</span>
             </div>
             <p class="metric-score">
-              <span class="score-achieved">61</span>
+              <span class="score-achieved"></span>
               <span class="score-separator" aria-hidden="true"> / </span>
               <span class="score-max">100</span>
             </p>
@@ -71,7 +74,7 @@
               <span class="metric-name">Visual</span>
             </div>
             <p class="metric-score">
-              <span class="score-achieved">73</span>
+              <span class="score-achieved"></span>
               <span class="score-separator" aria-hidden="true"> / </span>
               <span class="score-max">100</span>
             </p>

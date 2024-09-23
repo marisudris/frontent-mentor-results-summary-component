@@ -15,8 +15,8 @@
     "icon": "./assets/images/icon-verbal.svg"
   },
   {
-    "category": "Visual",
-    "score": 72,
-    "icon": "./assets/images/icon-visual.svg"
+      "category": "Visual",
+      "score": 72,
+      "icon": "./assets/images/icon-visual.svg"
   }
 ]

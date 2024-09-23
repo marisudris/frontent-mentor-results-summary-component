@@ -226,6 +226,10 @@ body {
   display: block;
 }
 
+.result-verdict {
+  opacity: 0;
+}
+
 .result-grade {
   margin-bottom: 0.2em;
 }
