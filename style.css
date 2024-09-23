@@ -7,11 +7,18 @@
   --clr-pale-blue: hsl(221, 100%, 96%);
   --clr-light-lavender: hsl(241, 100%, 89%);
   --clr-dark-gray-blue: hsl(224, 30%, 27%);
+  --clr-light-gray-blue: hsl(222, 12%, 49%);
 
   --clr-red: hsl(0, 100%, 67%);
   --clr-orange: hsl(39, 100%, 56%);
   --clr-teal: hsl(166, 100%, 37%);
   --clr-blue: hsl(234, 85%, 45%);
+
+  --clr-red-bg: hsla(0, 100%, 67%, 0.05);
+  --clr-orange-bg: hsla(39, 100%, 56%, 0.035);
+  --clr-teal-bg: hsla(166, 100%, 37%, 0.035);
+  --clr-blue-bg: hsla(234, 85%, 45%, 0.035);
+
 
   --clr-bg-gradient: linear-gradient(
     to bottom,
@@ -82,6 +89,7 @@ button {
 ****************/
 body {
   font-family: "Hanken Grotesk", sans-serif;
+  font-weight: var(--font-weight-regular);
 }
 
 .result-section {
@@ -93,7 +101,8 @@ body {
   color: white;
 }
 
-.result-title {
+.result-title,
+.summary-title {
   font-size: 1.1rem;
 }
 
@@ -102,12 +111,47 @@ body {
 }
 
 .score-number {
-  font-size: 3.28125rem;
+  font-size: 3.5rem;
   font-weight: var(--font-weight-extra-bold);
 }
 
 .result-grade {
   font-size: 1.5625rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.score-achieved,
+.score-max {
+  font-weight: var(--font-weight-bold);
+}
+
+.score-separator, .score-max {
+  color: var(--clr-light-gray-blue);
+}
+
+.metric-name {
+  font-weight: var(--font-weight-bold);
+}
+
+.metric-reaction .metric-name {
+  color: var(--clr-red);
+}
+
+.metric-memory .metric-name {
+  color: var(--clr-orange);
+}
+
+.metric-verbal .metric-name {
+  color: var(--clr-teal);
+}
+
+.metric-visual .metric-name {
+  color: var(--clr-blue);
+}
+
+.button {
+  color: white;
+  font-size: 1.125rem;
   font-weight: var(--font-weight-bold);
 }
 
@@ -122,6 +166,10 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh;
+}
+
+.results-card {
+  display: grid;
 }
 
 .result-section {
@@ -146,7 +194,7 @@ body {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   background: var(--clr-circle-gradient);
 }
 
@@ -155,9 +203,66 @@ body {
 }
 
 .result-grade {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.2em;
 }
 
+.summary-section {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 30px;
+}
+
+.summary-title {
+  margin-bottom: 1.5em; /****/
+}
+
+.metrics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.metric-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1em 1em;
+  border-radius: 15px;
+}
+
+.score-separator {
+  margin-left: 0.2em;
+}
+.metric-reaction {
+  background-color: var(--clr-red-bg);
+}
+
+.metric-memory {
+  background-color: var(--clr-orange-bg);
+}
+
+.metric-verbal {
+  background-color: var(--clr-teal-bg);
+}
+
+.metric-visual {
+  background-color: var(--clr-blue-bg);
+
+}
+
+.metric-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.button {
+  background-color: var(--clr-dark-gray-blue);
+  border: none;
+  padding: 16px 24px;
+  margin-top: 20px; /***/
+  border-radius: 999em;
+}
 /***********
 ***Utilities***
 *************/
