@@ -30,6 +30,8 @@
     hsla(256, 72%, 46%, 1),
     hsla(241, 72%, 46%, 0)
   );
+
+  --box-shadow: 0px 25px 60px -10px hsla(241, 95%, 70%, 0.2);
 }
 
 *,
@@ -43,7 +45,7 @@
 ************/
 body {
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 h1,
@@ -174,6 +176,7 @@ body {
   display: grid;
   max-width: 736px;
   background-color: white;
+  box-shadow: var(--box-shadow);
 }
 
 @media (min-width: 768px) {
@@ -196,12 +199,12 @@ body {
 @media (min-width: 768px) {
   .result-section {
     border-radius: 32px;
-    padding: 38px 55px 0;
+    padding: 42px 55px 0;
   }
 }
 
 .result-title {
-  margin-bottom: 1.45em;
+  margin-bottom: 1.6em;
 }
 
 .score-circle {
@@ -211,6 +214,8 @@ body {
   align-items: center;
   width: clamp(8.75rem, 7.43rem + 5.634vw, 12.5rem);
   height: clamp(8.75rem, 7.43rem + 5.634vw, 12.5rem);
+  max-width: 13rem;
+  max-height: 13rem;
   border-radius: 50%;
   margin-bottom: 22px;
   background: var(--clr-circle-gradient);
@@ -218,12 +223,16 @@ body {
 
 @media (min-width: 768px) {
   .score-circle {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
 }
 
 .score-value > * {
   display: block;
+}
+
+.score-total {
+  margin-top: -7px;
 }
 
 .result-verdict {
@@ -236,7 +245,7 @@ body {
 
 @media (min-width: 768px) {
   .result-grade {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.4em;
   }
 }
 
@@ -252,18 +261,18 @@ body {
 
 @media (min-width: 768px) {
   .summary-section {
-    padding: 38px 40px;
+    padding: 42px 40px 46px;
   }
 }
 
 .summary-title {
-  margin-bottom: 1.5em; /****/
+  margin-bottom: 1.35em;
 }
 
 .metrics-list {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 18px;
 }
 
 .metric-item {
@@ -276,7 +285,7 @@ body {
 
 @media (min-width: 768px) {
   .metric-item {
-    padding: 0.9em 1em;
+    padding: 0.875em 0.9em;
   }
 }
 
