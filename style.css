@@ -244,6 +244,10 @@ body {
   display: block;
 }
 
+.score-total {
+  opacity: 0.8;
+}
+
 @media (min-width: 768px) {
   .score-total {
     margin-top: -5px;
