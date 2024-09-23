@@ -22,7 +22,7 @@
 
   --clr-bg-gradient: linear-gradient(
     to bottom,
-    hsl(252, 100%, 67%),
+    hsl(252, 100%, 67%) -25%,
     hsl(241, 81%, 54%)
   );
   --clr-circle-gradient: linear-gradient(
