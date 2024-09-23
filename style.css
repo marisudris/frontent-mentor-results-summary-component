@@ -84,6 +84,7 @@ button {
 
 button {
   background: none;
+  cursor: pointer;
 }
 
 /***************
@@ -324,11 +325,30 @@ body {
 }
 
 .button {
+  position: relative;
   background-color: var(--clr-dark-gray-blue);
   border: none;
   padding: 0.875em 1.333em;
   margin-top: 1em;
   border-radius: 999em;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--clr-bg-gradient);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.button:hover::before,
+.button:focus::before {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
