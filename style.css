@@ -204,7 +204,13 @@ body {
 }
 
 .result-title {
-  margin-bottom: 1.6em;
+  margin-bottom: 1.45em;
+}
+
+@media (min-width: 768px) {
+  .result-title {
+    margin-bottom: 1.6em;
+  }
 }
 
 .score-circle {
@@ -217,13 +223,13 @@ body {
   max-width: 13rem;
   max-height: 13rem;
   border-radius: 50%;
-  margin-bottom: 22px;
+  margin-bottom: 1.375em;
   background: var(--clr-circle-gradient);
 }
 
 @media (min-width: 768px) {
   .score-circle {
-    margin-bottom: 26px;
+    margin-bottom: 1.5em;
   }
 }
 
@@ -231,8 +237,10 @@ body {
   display: block;
 }
 
-.score-total {
-  margin-top: -7px;
+@media (min-width: 768px) {
+  .score-total {
+    margin-top: -5px;
+  }
 }
 
 .result-verdict {
