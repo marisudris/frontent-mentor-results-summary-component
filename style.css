@@ -181,7 +181,7 @@ body {
   min-height: 100vh;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .main {
     align-items: center;
   }
@@ -189,12 +189,12 @@ body {
 
 .results-card {
   display: grid;
-  max-width: 736px;
+  max-width: 46rem;
   background-color: white;
   box-shadow: var(--box-shadow);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .results-card {
     grid-template-columns: 1fr 1fr;
     border-radius: 32px;
@@ -211,7 +211,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .result-section {
     padding: 2.39em 3.13em 0;
     border-radius: 32px;
@@ -222,7 +222,7 @@ body {
   margin-bottom: 1.45em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .result-title {
     margin-bottom: 1.6em;
   }
@@ -242,7 +242,7 @@ body {
   background: var(--clr-circle-gradient);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .score-circle {
     margin-bottom: 1.5em;
   }
@@ -256,7 +256,7 @@ body {
   opacity: 0.8;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .score-total {
     margin-top: -5px;
   }
@@ -274,7 +274,7 @@ body {
   margin-bottom: 0.2em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .result-grade {
     margin-bottom: 0.4em;
   }
@@ -290,7 +290,7 @@ body {
   padding: 1.563em 1.875em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .summary-section {
     padding: 2.39em 2.27em 2.61em;
   }
@@ -314,7 +314,7 @@ body {
   border-radius: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .metric-item {
     padding: 0.875em 0.9em;
   }
@@ -373,7 +373,7 @@ body {
   opacity: 1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .button {
     margin-top: 2.2em;
   }
