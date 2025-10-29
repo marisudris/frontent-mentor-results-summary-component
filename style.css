@@ -303,7 +303,7 @@ body {
 .metrics-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 1.125rem;
 }
 
 .metric-item {
