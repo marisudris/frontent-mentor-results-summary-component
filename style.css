@@ -266,6 +266,10 @@ body {
   opacity: 0;
 }
 
+.result-verdict--visible {
+  opacity: 1;
+}
+
 .result-grade {
   margin-bottom: 0.2em;
 }

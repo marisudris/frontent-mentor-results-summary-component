@@ -39,7 +39,7 @@ function displayAverage(average) {
     if (averageElement && totalElement && verdictElement) {
         averageElement.textContent = average.toString();
         totalElement.textContent = 'of 100';
-        verdictElement.style.opacity = '1';
+        verdictElement.classList.add('result-verdict--visible');
     }
 }
 window.addEventListener('DOMContentLoaded', () => {
